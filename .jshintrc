@@ -1,0 +1,31 @@
+{
+    "curly": true,
+    "eqeqeq": true,
+    "forin": true,
+    "freeze": true,
+    // 全局变量需要手动加到配置文件的globals属性里
+    "globals": {
+
+    },
+    "latedef": true,
+    "maxerr": 200,
+    "nonew": true,
+    "shadow": "inner",
+    "singleGroups": true,
+    "undef": true,
+    "unused": true,
+
+    "evil": true,
+    "expr": true,
+    "proto": true,
+    "scripturl": true,
+    "sub": true,
+
+    "browser": true,
+    "devel": true,
+    "jquery": true,
+    "nonstandard": true,
+    "typed": true,
+    "worker": true,
+    "esversion":6
+}
