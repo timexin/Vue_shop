@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <a href="#/user">完美链接</a>
+hello ,med
     <router-view/>
   </div>
 
