@@ -11,7 +11,8 @@ module.exports = {
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
     proxyTable: {
-    '/api': { target: "http://rap2api.taobao.org/app/mock/273462", changeOrigin: true, pathRewrite: { '^/api': '' } }
+   // '/api': { target: "http://rap2api.taobao.org/app/mock/273462", changeOrigin: true, pathRewrite: { '^/api': '' } }
+   '/api': { target: "https://www.liulongbin.top:8888/api/private/v1/", changeOrigin: true, pathRewrite: { '^/api': '' } }
     },
 
     // Various Dev Server settings
