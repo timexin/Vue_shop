@@ -10,6 +10,11 @@ import './assets/css/gloabe.css';
 Vue.prototype.$axios = Axios
 Axios.defaults.baseURL = '/api'
 Axios.defaults.headers.post['Content-Type'] = 'application/json';
+Axios.interceptors.request.use(config	=>{
+	//为请求头对象，添加Token验证的Authorization
+	config.headers.Authorization = window.sessionStorage.getItem('token');
+	return config;
+});
 Vue.use(ElementUI);
 
 Vue.config.productionTip = false
