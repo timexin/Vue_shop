@@ -11,8 +11,12 @@ module.exports = {
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
     proxyTable: {
+   //   阿里妈妈接口
    // '/api': { target: "http://rap2api.taobao.org/app/mock/273462", changeOrigin: true, pathRewrite: { '^/api': '' } }
-   '/api': { target: "https://www.liulongbin.top:8888/api/private/v1/", changeOrigin: true, pathRewrite: { '^/api': '' } }
+   //   教程视频接口
+    '/api': { target: "https://www.liulongbin.top:8888/api/private/v1/", changeOrigin: true, pathRewrite: { '^/api': '' } }
+   // 本地测试接口
+    //   '/api': { target: "http://localhost:3000/users/", changeOrigin: true, pathRewrite: { '^/api': '' } }
     },
 
     // Various Dev Server settings
